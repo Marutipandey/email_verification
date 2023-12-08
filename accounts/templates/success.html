@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <h3>Priya your email is verified</h3>
+            </div>
+            <div>
+                Please Login
+                <a class="btn btn-primary" href="{% url 'login_attempt' %}">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
